@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Conserto de notebook gamer em Fortaleza, Unidade Washington Soares | NotebookCE</title>
+<meta name="description" content="Reparo especializado de notebook gamer em Fortaleza, inclusive em placa, com orçamento gratuito antes de qualquer serviço.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap">
+<link rel="stylesheet" href="../../assets/base.css">
+<style>
+  :root { --c: #e01b2d; --c-texto: #fff; --brilho: #ff2a3c; --c-escuro: #c4172a; --raio-cta: 3px; --raio-foto: 2px; }
+  h1, h2 { font-stretch: 75%; font-weight: 700; letter-spacing: -.01em; }
+  .cta { font-stretch: 90%; }
+
+  .heroi-area { position: relative; }
+  .heroi { position: relative; display: flex; align-items: center; min-height: min(calc(100vh - 84px), 820px); padding-block: 4.5rem 11vw; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%); }
+  .heroi > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
+  .heroi::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(27, 29, 34, .97) 0%, rgba(27, 29, 34, .82) 44%, rgba(27, 29, 34, .2) 78%, color-mix(in srgb, var(--c) 22%, transparent) 100%); }
+  .heroi__led { left: -2%; right: -2%; bottom: 3.45vw; rotate: -4deg; z-index: 2; }
+  .heroi__texto { position: relative; z-index: 1; }
+  .heroi h1 { max-width: 12ch; font-size: clamp(3.4rem, 8vw, 7.5rem); line-height: .9; }
+  .heroi__lead { max-width: 44ch; margin: 1.6rem 0 2.25rem; color: #cfd2d7; font-size: clamp(1.0625rem, 1.5vw, 1.25rem); }
+  .heroi__prova { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.5rem; margin-top: 1.75rem; color: #cfd2d7; font-size: .9375rem; }
+
+  .h2-grande { font-size: clamp(2.5rem, 6vw, 5rem); line-height: .95; }
+  .intro { max-width: 46ch; margin-top: 1rem; color: var(--suave); font-size: 1.125rem; }
+
+  .ficha { margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 2px solid var(--claro); }
+  .ficha a { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr) auto; gap: .4rem clamp(1.5rem, 4vw, 4rem); align-items: center; padding: 1.5rem .25rem; border-bottom: 1px solid var(--linha); text-decoration: none; transition: background .2s ease, padding .2s ease; }
+  .ficha a:hover { padding-inline: 1rem; background: linear-gradient(90deg, color-mix(in srgb, var(--brilho) 22%, transparent), transparent); }
+  .ficha h3 { font-size: clamp(1.5rem, 2.8vw, 2.25rem); font-stretch: 75%; font-weight: 700; line-height: 1.05; }
+  .ficha p { color: var(--suave); }
+  .ficha svg { width: 24px; height: 24px; fill: var(--brilho); }
+
+  .passos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(2.5rem, 5vw, 4rem); background: var(--preto); }
+  .passos li { padding: clamp(1.5rem, 3vw, 2.5rem); }
+  .passos li + li { box-shadow: inset 1px 0 0 var(--linha); }
+  .passos__n { display: block; margin-bottom: 1rem; color: var(--brilho); font-size: clamp(3rem, 6vw, 5rem); font-stretch: 75%; font-weight: 700; line-height: .85; text-shadow: 0 0 26px color-mix(in srgb, var(--brilho) 65%, transparent); }
+  .passos h3 { margin-bottom: .5rem; font-size: 1.5rem; font-stretch: 78%; font-weight: 700; line-height: 1.1; }
+  .passos p { color: var(--suave); }
+  .acao { margin-top: clamp(2rem, 4vw, 3rem); }
+
+  .bancada { position: relative; overflow: hidden; background: var(--preto); clip-path: polygon(0 5vw, 100% 0, 100% calc(100% - 5vw), 0 100%); padding-block: calc(5vw + clamp(4rem, 8vw, 6rem)); }
+  .bancada::before { content: ""; position: absolute; width: 60vw; height: 60vw; right: -12vw; top: -8vw; background: radial-gradient(circle, color-mix(in srgb, var(--brilho) 28%, transparent), transparent 62%); pointer-events: none; }
+  .bancada__grade { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1rem; align-items: end; }
+  .bancada__texto { grid-column: 1 / span 5; align-self: start; }
+  .bancada__texto p { margin-top: 1.25rem; color: var(--suave); }
+  .bancada__a { grid-column: 6 / span 7; aspect-ratio: 16 / 10; }
+  .bancada__b { grid-column: 1 / span 4; aspect-ratio: 4 / 5; margin-top: 1rem; }
+  .bancada__c { grid-column: 5 / span 8; aspect-ratio: 16 / 8; }
+  .bancada figure { position: relative; overflow: hidden; border-radius: var(--raio-foto); }
+  .bancada img { width: 100%; height: 100%; object-fit: cover; filter: var(--filtro-foto); }
+  .bancada figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 2rem .9rem .7rem; background: linear-gradient(transparent, rgba(0, 0, 0, .78)); font-size: .8125rem; }
+  .provas { position: relative; margin-top: clamp(3.5rem, 7vw, 6rem); }
+
+  @media (max-width: 860px) {
+    .heroi { display: block; min-height: 0; padding-block: 0 15vw; }
+    .heroi > img { position: relative; display: block; height: 66vw; }
+    .heroi::after { background: linear-gradient(0deg, var(--grafite) 55%, rgba(27, 29, 34, .25) 66%, rgba(27, 29, 34, .2) 100%); }
+    .heroi__texto { margin-top: -.5rem; }
+    .ficha a { grid-template-columns: minmax(0, 1fr) auto; }
+    .ficha h3 { grid-column: 1; }
+    .ficha p { grid-column: 1; grid-row: 2; }
+    .ficha svg { grid-column: 2; grid-row: 1 / span 2; }
+    .bancada__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bancada__texto, .bancada__a, .bancada__c { grid-column: 1 / -1; }
+    .bancada__b { grid-column: 1 / -1; aspect-ratio: 16 / 12; margin-top: 0; }
+    .passos { grid-template-columns: minmax(0, 1fr); }
+    .passos li + li { box-shadow: inset 0 1px 0 var(--linha); }
+  }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="faixa topo__faixa">
+    <img class="topo__emblema" src="https://notebookce.com.br/wp-content/uploads/2024/09/cropped-favicon-192x192.webp" alt="" width="46" height="46">
+    <p class="topo__nome">Notebook<span class="marca">CE</span> Assistência Premium<small>Unidade Washington Soares</small></p>
+    <a class="cta cta--pequeno" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>(85) 99750-5330</span></a>
+  </div>
+</header>
+<main>
+  <div class="heroi-area">
+    <section class="heroi">
+      <img class="acende" src="https://lh3.googleusercontent.com/d/1rOdA4WZgNqsI_7m1NEC5qNkPikhuOT2p=w1280" srcset="https://lh3.googleusercontent.com/d/1rOdA4WZgNqsI_7m1NEC5qNkPikhuOT2p=w640 640w, https://lh3.googleusercontent.com/d/1rOdA4WZgNqsI_7m1NEC5qNkPikhuOT2p=w960 960w, https://lh3.googleusercontent.com/d/1rOdA4WZgNqsI_7m1NEC5qNkPikhuOT2p=w1280 1280w" sizes="100vw" alt="Bancada técnica da NotebookCE com microscópio e placa em reparo, Unidade Washington Soares" fetchpriority="high">
+      <div class="faixa heroi__texto">
+        <h1>Conserto de notebook gamer em Fortaleza</h1>
+        <p class="heroi__lead">Superaquecimento, perda de desempenho e falhas na placa, tratados por uma equipe especializada em notebooks gamer.</p>
+        <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+        <div class="heroi__prova">
+          <p class="nota"><strong>4,9</strong> <span class="estrelas" aria-hidden="true">★★★★★</span> <span>157 avaliações no Google</span></p>
+          <span>Orçamento gratuito</span>
+        </div>
+      </div>
+    </section>
+    <span class="led led--h heroi__led"></span>
+  </div>
+
+  <section class="secao">
+    <div class="faixa">
+      <h2 class="h2-grande">Qual é o problema do seu notebook?</h2>
+      <p class="intro">Atendemos Dell, Acer, Lenovo, Asus e outras marcas.</p>
+      <ul class="ficha">
+        <li><a href="https://wa.me/5585997505330"><h3>Superaquecimento durante o jogo</h3><p>Limpeza premium e diagnóstico das causas da temperatura alta e dos desligamentos.</p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330"><h3>Perda de desempenho ou travamentos</h3><p>Identificação do que compromete o desempenho em jogos.</p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330"><h3>Não liga ou desliga sozinho</h3><p>Diagnóstico eletrônico, inclusive de falhas na placa e nos componentes.</p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330"><h3>Carcaça ou dobradiça quebrada</h3><p>Recuperação da carcaça e das dobradiças.</p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330"><h3>Teclado com falha</h3><p>Reparo ou troca do teclado.</p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="faixa">
+      <h2 class="h2-grande">Como trabalhamos</h2>
+      <ol class="passos">
+        <li><span class="passos__n">1</span><h3>Diagnóstico preciso</h3><p>Identificamos a causa do defeito, inclusive em falhas de placa.</p></li>
+        <li><span class="passos__n">2</span><h3>Orçamento antes do serviço</h3><p>O orçamento é gratuito. Você recebe o valor e o prazo e decide se autoriza o reparo.</p></li>
+        <li><span class="passos__n">3</span><h3>Reparo com garantia</h3><p>A garantia de cada serviço é informada junto com o orçamento.</p></li>
+      </ol>
+      <p class="acao"><a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a></p>
+    </div>
+  </section>
+
+  <section class="bancada">
+    <div class="faixa bancada__grade">
+      <div class="bancada__texto">
+        <h2 class="h2-grande">Onde o reparo acontece</h2>
+        <p>Notebooks gamer são uma das especialidades da NotebookCE, com bancada técnica e microscópio para reparo eletrônico, em Fortaleza desde 2020.</p>
+      </div>
+      <figure class="bancada__a"><img src="https://lh3.googleusercontent.com/d/14qHH5EVT6mDSVeu2LU7-f5VnG6p51dEF=w1280" alt="Bancada técnica da NotebookCE, Unidade Washington Soares" loading="lazy"><figcaption>Bancada técnica, Unidade Washington Soares</figcaption></figure>
+      <figure class="bancada__b"><img src="https://lh3.googleusercontent.com/d/1Bef3o_hYcz5HaZJlw0WGgfcs7cK4UJgu=w1280" alt="Microscópio usado em reparos eletrônicos, Unidade Washington Soares" loading="lazy"><figcaption>Microscópio, Unidade Washington Soares</figcaption></figure>
+      <figure class="bancada__c"><img src="https://lh3.googleusercontent.com/d/1O5RyuyMplxFHFQh979es2ZuwnCa_2Wu8=w1280" alt="Recepção da NotebookCE, Unidade Washington Soares" loading="lazy"><figcaption>Recepção, Unidade Washington Soares</figcaption></figure>
+    </div>
+    <div class="faixa provas"><div class="avaliacoes">
+        <p class="avaliacoes__nota">4,9</p>
+        <div class="avaliacoes__texto">
+          <span class="estrelas" aria-hidden="true">★★★★★</span>
+          <p>157 avaliações no Google nesta loja</p>
+          <a href="https://maps.app.goo.gl/PcrQEP7s4qBSvQJJA" target="_blank" rel="noopener">Ler as avaliações no Google</a>
+        </div>
+      </div></div>
+  </section>
+
+  <section class="secao local" id="unidade">
+    <div class="faixa local__grade">
+      <div>
+        <h2>Onde fica a Unidade Washington Soares</h2>
+        <p class="local__nome">NotebookCE, Pátio Água Fria</p>
+        <p class="nota"><strong>4,9</strong> <span class="estrelas" aria-hidden="true">★★★★★</span> <span>157 avaliações no Google</span></p>
+        <dl>
+          <dt>Endereço</dt><dd>Pátio Água Fria, Av. Washington Soares, 3690, Loja Externa, Parque Manibura, Fortaleza - CE, 60821-750</dd>
+          <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h<br>Sábado, das 9h às 13h</dd>
+          <dt>WhatsApp</dt><dd>(85) 99750-5330</dd>
+          <dt>E-mail</dt><dd>notebookceloja2@gmail.com</dd>
+        </dl>
+        <div class="local__acoes">
+          <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+          <a class="local__link" href="https://maps.app.goo.gl/PcrQEP7s4qBSvQJJA" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+        <p class="local__outra">A NotebookCE também atende na Unidade Aldeota.</p>
+      </div>
+      <div class="local__visual">
+        <iframe class="local__mapa" src="https://www.google.com/maps?q=-3.790827,-38.4808105&z=16&output=embed" title="Mapa da NotebookCE, Unidade Washington Soares" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <figure class="local__fachada"><img src="https://lh3.googleusercontent.com/d/1cirV2IEoU9WAfN6lUqwBMrZGkWeZbfSS=w900" alt="Fachada da NotebookCE, Unidade Washington Soares" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="claro secao">
+    <div class="faixa perguntas">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details><summary>Quanto custa o reparo?</summary><p>O valor é definido no diagnóstico, de acordo com o modelo e o defeito. O orçamento é gratuito e pode ser parcelado em até 3x sem juros, conforme as condições da loja.</p></details>
+        <details><summary>Quanto tempo leva?</summary><p>O prazo é informado no orçamento e depende da complexidade do reparo e da disponibilidade de peças.</p></details>
+        <details><summary>O reparo tem garantia?</summary><p>Sim. O reparo de placa tem garantia de três meses. Nos demais serviços, o prazo é informado no orçamento.</p></details>
+        <details><summary>Vocês fazem upgrade de SSD e memória?</summary><p>Sim, com os upgrades compatíveis com o seu modelo.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao final">
+    <img src="https://lh3.googleusercontent.com/d/1HI4_nq6wLfMPwjvPxMF54DrH8OeKDe6a=w1280" alt="" loading="lazy">
+    <div class="faixa">
+      <h2>Fale com a nossa equipe técnica</h2>
+      <p>Atendimento pelo WhatsApp ou na Unidade Washington Soares, de segunda a sábado.</p>
+      <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+    </div>
+  </section>
+</main>
+<footer class="rodape">
+  <div class="faixa">
+    <p>NotebookCE Assistência Premium, em Fortaleza desde 2020. Unidade Washington Soares: Pátio Água Fria, Av. Washington Soares, 3690, Loja Externa, Parque Manibura, Fortaleza - CE, 60821-750.</p>
+    <p>Marcas citadas apenas para identificar os equipamentos atendidos.</p>
+  </div>
+</footer>
+<div class="barra-cta"><a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a></div>
+<script>
+  // Evita dois botões iguais na mesma tela: a barra só some enquanto o primeiro botão da página está visível.
+  new IntersectionObserver(([item]) => document.body.classList.toggle('barra-oculta', item.isIntersecting))
+    .observe(document.querySelector('main .cta'));
+</script>
+</body>
+</html>

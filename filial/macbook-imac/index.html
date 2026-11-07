@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Conserto de MacBook e iMac em Fortaleza, Unidade Washington Soares | NotebookCE</title>
+<meta name="description" content="Diagnóstico preciso e reparo especializado de MacBook e iMac em Fortaleza, inclusive em placa, com orçamento gratuito.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap">
+<link rel="stylesheet" href="../../assets/base.css">
+<style>
+  :root { --c: #ffb020; --c-escuro: #a86a00; }
+
+  .heroi { position: relative; display: flex; align-items: center; min-height: min(calc(100vh - 84px), 800px); padding-block: 4.5rem; overflow: hidden; }
+  .heroi__foto { position: absolute; inset: 0 0 0 auto; width: 54%; }
+  .heroi__foto img { width: 100%; height: 100%; object-fit: cover; object-position: center 62%; }
+  .heroi__foto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--grafite) 0%, rgba(27, 29, 34, .25) 34%, transparent 60%), linear-gradient(0deg, rgba(27, 29, 34, .55), transparent 30%); }
+  .heroi__led-v { top: 0; bottom: 0; left: 46%; }
+  .heroi__led-h { left: 46%; right: 0; bottom: 0; animation-delay: .55s; }
+  .heroi__texto { position: relative; z-index: 2; }
+  .heroi h1 { max-width: 12.5ch; font-size: clamp(2.9rem, 5.6vw, 5.25rem); letter-spacing: -.035em; line-height: .98; }
+  .heroi__lead { max-width: 42ch; margin: 1.6rem 0 2.25rem; color: #cfd2d7; font-size: clamp(1.0625rem, 1.5vw, 1.25rem); }
+  .heroi__prova { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.5rem; margin-top: 1.75rem; color: #cfd2d7; font-size: .9375rem; }
+
+  .sintomas { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(2.5rem, 6vw, 6rem); }
+  .sintomas h2 { align-self: center; font-size: clamp(2.25rem, 4.4vw, 3.75rem); }
+  .sintomas__lista { border-top: 1px solid var(--linha); }
+  .sintomas__lista a { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.35rem .25rem; border-bottom: 1px solid var(--linha); font-size: clamp(1.375rem, 2.6vw, 2.125rem); font-weight: 550; letter-spacing: -.02em; line-height: 1.15; text-decoration: none; transition: padding .2s ease, background .2s ease; }
+  .sintomas__lista a:hover { padding-inline: 1rem; background: var(--c); }
+  .sintomas__lista svg { width: 26px; height: 26px; flex: none; fill: currentColor; }
+
+  .passos h2 { font-size: clamp(2.25rem, 4.4vw, 3.75rem); }
+  .passos__lista { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem clamp(1.5rem, 3vw, 3rem); margin-top: clamp(3rem, 6vw, 4.5rem); padding-top: 2.75rem; }
+  .passos__lista::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: rgba(230, 232, 235, .28); }
+  .passos__lista li { position: relative; }
+  .passos__lista li::before { content: ""; position: absolute; left: 0; top: -44px; width: 16px; height: 16px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 30%, transparent), 0 0 22px color-mix(in srgb, var(--c) 90%, transparent); }
+  .passos h3 { margin-bottom: .45rem; font-size: 1.375rem; font-weight: 600; letter-spacing: -.015em; }
+  .passos__lista p { color: var(--suave); }
+  .passos__acao { margin-top: 3rem; }
+
+  .estrutura { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: stretch; }
+  .estrutura__foto { position: relative; min-height: 460px; margin: 0; overflow: hidden; }
+  .estrutura__foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: var(--filtro-foto); }
+  .estrutura__foto figcaption { position: absolute; left: .85rem; bottom: .85rem; padding: .25rem .75rem; background: rgba(27, 29, 34, .82); border-radius: 999px; color: var(--claro); font-size: .8125rem; }
+  .estrutura__texto { padding: clamp(3.5rem, 8vw, 7rem) max(1.25rem, calc((100vw - 1240px) / 2)) clamp(3.5rem, 8vw, 7rem) clamp(2rem, 5vw, 5rem); }
+  .estrutura h2 { font-size: clamp(2rem, 3.6vw, 3rem); letter-spacing: -.028em; }
+  .estrutura__texto > p { max-width: 40ch; margin-top: 1.25rem; color: var(--suave); }
+  .estrutura .avaliacoes { margin-top: clamp(2.5rem, 5vw, 4rem); }
+
+  @media (max-width: 860px) {
+    .heroi { display: block; min-height: 0; padding-block: 0 3rem; }
+    .heroi__foto { position: relative; width: 100%; height: 62vw; margin-bottom: 2rem; }
+    .heroi__foto::after { background: linear-gradient(0deg, var(--grafite), transparent 45%); }
+    .heroi__led-v { display: none; }
+    .heroi__led-h { left: 0; top: 62vw; bottom: auto; }
+    .sintomas, .estrutura { grid-template-columns: minmax(0, 1fr); }
+    .estrutura__foto { min-height: 62vw; }
+    .estrutura__texto { padding-inline: 1.25rem; }
+    .passos__lista { grid-template-columns: minmax(0, 1fr); padding-top: 0; padding-left: 2.25rem; }
+    .passos__lista::before { left: 7px; right: auto; top: 0; bottom: 0; width: 2px; height: auto; }
+    .passos__lista li::before { left: -2.25rem; top: .3rem; }
+  }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="faixa topo__faixa">
+    <img class="topo__emblema" src="https://notebookce.com.br/wp-content/uploads/2024/09/cropped-favicon-192x192.webp" alt="" width="46" height="46">
+    <p class="topo__nome">Notebook<span class="marca">CE</span> Assistência Premium<small>Unidade Washington Soares</small></p>
+    <a class="cta cta--pequeno" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>(85) 99750-5330</span></a>
+  </div>
+</header>
+<main>
+  <section class="heroi">
+    <div class="heroi__foto"><img class="acende" src="https://lh3.googleusercontent.com/d/1e7HIXB6l-4UHzE0PvcZnedK6gTUiGFKS=w1280" srcset="https://lh3.googleusercontent.com/d/1e7HIXB6l-4UHzE0PvcZnedK6gTUiGFKS=w640 640w, https://lh3.googleusercontent.com/d/1e7HIXB6l-4UHzE0PvcZnedK6gTUiGFKS=w960 960w, https://lh3.googleusercontent.com/d/1e7HIXB6l-4UHzE0PvcZnedK6gTUiGFKS=w1280 1280w" sizes="(max-width: 860px) 100vw, 54vw" alt="Balcão de mármore da NotebookCE com iMac e MacBook, Unidade Washington Soares" fetchpriority="high"></div>
+    <span class="led led--v heroi__led-v"></span>
+    <span class="led led--h heroi__led-h"></span>
+    <div class="faixa heroi__texto">
+      <h1>Conserto de MacBook e iMac em Fortaleza</h1>
+      <p class="heroi__lead">Diagnóstico preciso e reparo especializado, inclusive em placa. Você conhece o valor e o prazo antes de autorizar qualquer serviço.</p>
+      <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+      <div class="heroi__prova">
+        <p class="nota"><strong>4,9</strong> <span class="estrelas" aria-hidden="true">★★★★★</span> <span>157 avaliações no Google</span></p>
+        <span>Orçamento gratuito</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="claro secao">
+    <div class="faixa sintomas">
+      <h2>Qual é o problema do seu Mac?</h2>
+      <ul class="sintomas__lista">
+        <li><a href="https://wa.me/5585997505330">Não liga ou não carrega <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330">Tela com falha ou quebrada <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330">Teclado com defeito <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330">Lentidão e travamentos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330">Superaquecimento <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+        <li><a href="https://wa.me/5585997505330">Bateria com pouca duração <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao passos">
+    <div class="faixa">
+      <h2>Como trabalhamos</h2>
+      <ol class="passos__lista">
+        <li><h3>Diagnóstico preciso</h3><p>Identificamos a causa do defeito, inclusive em falhas de placa.</p></li>
+        <li><h3>Orçamento antes do serviço</h3><p>O orçamento é gratuito. Você recebe o valor e o prazo e decide se autoriza o reparo.</p></li>
+        <li><h3>Reparo com garantia</h3><p>A garantia de cada serviço é informada junto com o orçamento.</p></li>
+      </ol>
+      <p class="passos__acao"><a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a></p>
+    </div>
+  </section>
+
+  <section class="claro estrutura">
+    <figure class="estrutura__foto"><img src="https://lh3.googleusercontent.com/d/1rOdA4WZgNqsI_7m1NEC5qNkPikhuOT2p=w1280" alt="Bancada técnica da NotebookCE com microscópio, Unidade Washington Soares" loading="lazy"><figcaption>Bancada técnica, Unidade Washington Soares</figcaption></figure>
+    <div class="estrutura__texto">
+      <h2>Duas lojas em Fortaleza, desde 2020</h2>
+      <p>Atendimento presencial na Aldeota e na Washington Soares, de segunda a sábado, com bancada técnica para reparo eletrônico.</p>
+      <div class="avaliacoes">
+        <p class="avaliacoes__nota">4,9</p>
+        <div class="avaliacoes__texto">
+          <span class="estrelas" aria-hidden="true">★★★★★</span>
+          <p>157 avaliações no Google nesta loja</p>
+          <a href="https://maps.app.goo.gl/PcrQEP7s4qBSvQJJA" target="_blank" rel="noopener">Ler as avaliações no Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao local" id="unidade">
+    <div class="faixa local__grade">
+      <div>
+        <h2>Onde fica a Unidade Washington Soares</h2>
+        <p class="local__nome">NotebookCE, Pátio Água Fria</p>
+        <p class="nota"><strong>4,9</strong> <span class="estrelas" aria-hidden="true">★★★★★</span> <span>157 avaliações no Google</span></p>
+        <dl>
+          <dt>Endereço</dt><dd>Pátio Água Fria, Av. Washington Soares, 3690, Loja Externa, Parque Manibura, Fortaleza - CE, 60821-750</dd>
+          <dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h<br>Sábado, das 9h às 13h</dd>
+          <dt>WhatsApp</dt><dd>(85) 99750-5330</dd>
+          <dt>E-mail</dt><dd>notebookceloja2@gmail.com</dd>
+        </dl>
+        <div class="local__acoes">
+          <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+          <a class="local__link" href="https://maps.app.goo.gl/PcrQEP7s4qBSvQJJA" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+        <p class="local__outra">A NotebookCE também atende na Unidade Aldeota.</p>
+      </div>
+      <div class="local__visual">
+        <iframe class="local__mapa" src="https://www.google.com/maps?q=-3.790827,-38.4808105&z=16&output=embed" title="Mapa da NotebookCE, Unidade Washington Soares" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <figure class="local__fachada"><img src="https://lh3.googleusercontent.com/d/1cirV2IEoU9WAfN6lUqwBMrZGkWeZbfSS=w900" alt="Fachada da NotebookCE, Unidade Washington Soares" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="claro secao">
+    <div class="faixa perguntas">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details><summary>Quanto custa o reparo?</summary><p>O valor é definido no diagnóstico, de acordo com o modelo e o defeito. O orçamento é gratuito e pode ser parcelado em até 3x sem juros, conforme as condições da loja.</p></details>
+        <details><summary>Quanto tempo leva?</summary><p>O prazo é informado no orçamento e depende da complexidade do reparo e da disponibilidade de peças.</p></details>
+        <details><summary>O reparo tem garantia?</summary><p>Sim. O prazo da garantia varia conforme o serviço e é informado no orçamento.</p></details>
+        <details><summary>Vocês fazem reparo em placa?</summary><p>Sim. Realizamos reparo eletrônico em placa de MacBook e iMac, a partir do diagnóstico.</p></details>
+        <details><summary>Preciso levar o equipamento até a loja?</summary><p>Você pode levar a uma das lojas. Fale conosco antes para combinar.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao final">
+    <img src="https://lh3.googleusercontent.com/d/1O5RyuyMplxFHFQh979es2ZuwnCa_2Wu8=w1280" alt="" loading="lazy">
+    <div class="faixa">
+      <h2>Fale com a nossa equipe técnica</h2>
+      <p>Atendimento pelo WhatsApp ou na Unidade Washington Soares, de segunda a sábado.</p>
+      <a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a>
+    </div>
+  </section>
+</main>
+<footer class="rodape">
+  <div class="faixa">
+    <p>NotebookCE Assistência Premium, em Fortaleza desde 2020. Unidade Washington Soares: Pátio Água Fria, Av. Washington Soares, 3690, Loja Externa, Parque Manibura, Fortaleza - CE, 60821-750.</p>
+    <p>Marcas citadas apenas para identificar os equipamentos atendidos.</p>
+  </div>
+</footer>
+<div class="barra-cta"><a class="cta" href="https://wa.me/5585997505330"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.31-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.49-8.41"/></svg><span>Solicitar orçamento gratuito</span></a></div>
+<script>
+  // Evita dois botões iguais na mesma tela: a barra só some enquanto o primeiro botão da página está visível.
+  new IntersectionObserver(([item]) => document.body.classList.toggle('barra-oculta', item.isIntersecting))
+    .observe(document.querySelector('main .cta'));
+</script>
+</body>
+</html>
